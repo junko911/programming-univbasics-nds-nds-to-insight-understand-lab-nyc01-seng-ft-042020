@@ -9,12 +9,11 @@ def pretty_print_nds(nds)
   nil
 end
 
-def print_first_directors_movie_titles(nds)
+def print_first_directors_movie_titles
   count = 0
-  while count < nds[0][:movies].count do
-    pp nds[0][:movies][count][:title]
+  while count < print_first_directors_movie_titles[0][:movies].count do
+    pp print_first_directors_movie_titles[0][:movies][count][:title]
     count += 1
   end
 end
 
-print_first_directors_movie_titles(directors_database)
