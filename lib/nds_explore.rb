@@ -11,7 +11,7 @@ end
 
 def print_first_directors_movie_titles(nds)
   count = 0
-  while count < nds[0][:movies].length do
+  while count < nds[0][:movies].count do
     pp nds[0][:movies][count][:title]
     count += 1
   end
